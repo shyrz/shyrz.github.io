@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d public -t",
+    "deploy": "gh-pages -d public -b master -u Shyrz <i@sh7.me> -t",
     "dev": "saber",
     "build": "saber build"
   },
