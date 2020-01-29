@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://shyrz.me/</id>
     <title>Shyrz</title>
-    <updated>2020-01-28T12:48:05.028Z</updated>
+    <updated>2020-01-29T02:54:49.144Z</updated>
     <generator>Saber</generator>
     <author>
         <name>Shyrz &lt;i@sh7.me&gt;</name>
@@ -17,7 +17,7 @@
         <title type="html"><![CDATA[测试文章 Test Post]]></title>
         <id>https://shyrz.me/blog/2020/01/post-test</id>
         <link href="https://shyrz.me/blog/2020/01/post-test"/>
-        <updated>2020-01-28T12:16:39.231Z</updated>
+        <updated>2020-01-29T02:53:59.708Z</updated>
         <summary type="html"><![CDATA[[TOC]
 ]]></summary>
         <content type="html"><![CDATA[<p>[TOC]</p> <h1><a id="h1_Heading_2"></a><a href="/blog/2020/01/post-test#h1-heading" aria-hidden="true" class="header-anchor">#</a> h1 Heading</h1> <h2><a id="h2_Heading_3"></a><a href="/blog/2020/01/post-test#h2-heading" aria-hidden="true" class="header-anchor">#</a> h2 Heading</h2> <h3><a id="h3_Heading_4"></a><a href="/blog/2020/01/post-test#h3-heading" aria-hidden="true" class="header-anchor">#</a> h3 Heading</h3> <h4><a id="h4_Heading_5"></a><a href="/blog/2020/01/post-test#h4-heading" aria-hidden="true" class="header-anchor">#</a> h4 Heading</h4> <h5><a id="h5_Heading_6"></a><a href="/blog/2020/01/post-test#h5-heading" aria-hidden="true" class="header-anchor">#</a> h5 Heading</h5> <h6><a id="h6_Heading_7"></a><a href="/blog/2020/01/post-test#h6-heading" aria-hidden="true" class="header-anchor">#</a> h6 Heading</h6> <h2><a id="Horizontal_Rules_10"></a><a href="/blog/2020/01/post-test#horizontal-rules" aria-hidden="true" class="header-anchor">#</a> Horizontal Rules</h2> <hr> <hr> <hr> <h2><a id="Typographic_replacements_19"></a><a href="/blog/2020/01/post-test#typographic-replacements" aria-hidden="true" class="header-anchor">#</a> Typographic replacements</h2> <p>Enable typographer option to see result.</p> <p>© © ® ® ™ ™ § § ±</p> <p>test… test… test… test?.. test!..</p> <p>!!! ??? ,  – —</p> <p>“Smartypants, double quotes” and ‘single quotes’</p> <h2><a id="Emphasis_31"></a><a href="/blog/2020/01/post-test#emphasis" aria-hidden="true" class="header-anchor">#</a> Emphasis</h2> <p><strong>This is bold text</strong></p> <p><strong>This is bold text</strong></p> <p><em>This is italic text</em></p> <p><em>This is italic text</em></p> <p><s>Strikethrough</s></p> <h2><a id="Blockquotes_44"></a><a href="/blog/2020/01/post-test#blockquotes" aria-hidden="true" class="header-anchor">#</a> Blockquotes</h2> <blockquote><p>Blockquotes can also be nested…</p> <blockquote><p>…by using additional greater-than signs right next to each other…</p> <blockquote><p>…or with spaces between arrows.</p></blockquote></blockquote></blockquote> <h2><a id="Lists_53"></a><a href="/blog/2020/01/post-test#lists" aria-hidden="true" class="header-anchor">#</a> Lists</h2> <p>Unordered</p> <ul><li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li> <li>Sub-lists are made by indenting 2 spaces:
@@ -46,7 +46,7 @@ $$</p> <h3><a id="KBD_266"></a><a href="/blog/2020/01/post-test#ltkbdgt" aria-hi
         <title type="html"><![CDATA[Hello World]]></title>
         <id>https://shyrz.me/blog/2019/02/hello-world</id>
         <link href="https://shyrz.me/blog/2019/02/hello-world"/>
-        <updated>2020-01-28T02:52:23.522Z</updated>
+        <updated>2020-01-29T02:53:59.708Z</updated>
         <summary type="html"><![CDATA[This is my first post.
 ]]></summary>
         <content type="html"><![CDATA[<h1><a id="Hello_World_0"></a><a href="/blog/2019/02/hello-world#hello-world" aria-hidden="true" class="header-anchor">#</a> Hello World</h1> <p>This is my first post.</p>]]></content>
@@ -56,7 +56,7 @@ $$</p> <h3><a id="KBD_266"></a><a href="/blog/2020/01/post-test#ltkbdgt" aria-hi
         <title type="html"><![CDATA[当我垂垂老矣，请让我有尊严地死去]]></title>
         <id>https://shyrz.me/blog/2014/05/when-i-am-old-let-me-die-with-dignity</id>
         <link href="https://shyrz.me/blog/2014/05/when-i-am-old-let-me-die-with-dignity"/>
-        <updated>2020-01-28T02:50:26.294Z</updated>
+        <updated>2020-01-29T02:53:59.708Z</updated>
         <summary type="html"><![CDATA[昨天晚上看望卧病在床的爷爷。
 在我的记忆中，几乎没有他的影子。一些黑历史的缘故，从小到大我都是住在外公外婆家。暴躁易怒，脾气不好，为人也不甚磊落，就是我耳中别人对他的评价。又因为我小时候怕猫，于是就私底下偷偷把他喊做“老猫”。
 下棋时他毕生的爱好，儿时的我也喜欢下棋，那时候我还是他的手下败将。
