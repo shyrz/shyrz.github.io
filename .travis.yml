@@ -1,0 +1,38 @@
+# 环境
+dist: xenial
+sudo: false
+# 语言
+language: node_js
+# 版本
+node_js: "12"
+# 缓存
+cache:
+  yarn: true
+  directories:
+    - node_modules
+# 构建分支白名单
+branches:
+  only:
+    - servant
+
+# 构建流程
+before_install:
+  # 更正时区
+  - export TZ=Asia/Shanghai
+script:
+  - yarn build
+
+# 构建
+deploy:
+  provider: pages
+  edge: true
+  skip_cleanup: true
+  local_dir: public
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  commit_message: "[U]`date +'%Y-%m-%d %T'`"
+  on:
+    branch: servant
+  target_branch: master
+  email: i@sh7.me
+  name: shyrz@travis_ci
