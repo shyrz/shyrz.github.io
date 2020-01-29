@@ -1,5 +1,15 @@
 <template>
   <div id="app" v-on:mousemove="handleMouseMove">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#8e8e93">
+    <meta name="apple-mobile-web-app-title" content="Shyrz">
+    <meta name="application-name" content="Shyrz">
+    <meta name="msapplication-TileColor" content="#1c1c1c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <div id="top">
       <div id="topbar"></div>
     </div>
@@ -46,10 +56,32 @@ export default {
 
     return {
       title: title ? `${title} » ${this.siteTitle}` : this.siteTitle,
-      meta: [ description && {
-        name: 'description',
-        content: description
-      }].filter(Boolean),
+      meta: [
+          description && {
+          name: 'description',
+          content: description
+        },
+        {
+          name: 'apple-mobile-web-app-title',
+          content: '#1c1c1c'
+        },
+        {
+          name: 'application-name',
+          content: 'Shyrz'
+        },
+        {
+          name: 'msapplication-TileColor',
+          content: '#1c1c1c'
+        },
+        {
+          name: 'msapplication-TileImage',
+          content: '/mstile-144x144.pn'
+        },
+        {
+          name: 'theme-color',
+          content: '#ffffff'
+        }
+      ].filter(Boolean),
       link: this.$feed ? [
         {
           rel: 'alternate',
@@ -62,7 +94,33 @@ export default {
               : 'json'
           }`,
           href: this.$feed.permalink
-        }, 
+        },
+        {
+          rel: 'apple-touch-icon',
+          sizes: '180x180',
+          href: '/apple-touch-icon.png'
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '32x32',
+          href: '/favicon-32x32.png'
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '16x16',
+          href: '/favicon-16x16.png'
+        },
+        {
+          rel: 'manifest',
+          href: '/site.webmanifest'
+        },
+        {
+          rel: 'mask-icon',
+          href: '/safari-pinned-tab.svg',
+          color: '#8e8e93'
+        },
         {
           rel: 'stylesheet',
           media: 'all',
@@ -81,7 +139,8 @@ export default {
   data() {
     return {
       x: 0,
-      y: 0
+      y: 0,
+      
     };
   },
   computed: {
