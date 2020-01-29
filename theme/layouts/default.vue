@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/main.scss';
+@import '../styles/aeon.scss';
 
 .home {
 	padding: 0 21px;

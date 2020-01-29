@@ -1,6 +1,6 @@
 import './styles/modern-normalize.css';
 import 'saber-highlight-css/default.css';
-import './styles/main.scss';
+import './styles/aeon.scss';
 
 
 export default ({ router }) => {
