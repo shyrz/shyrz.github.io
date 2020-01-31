@@ -1,0 +1,110 @@
+// ---------------------------------------------------------------
+// 字体配置
+// ---------------------------------------------------------------
+
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900|Noto+Serif+SC:200,300,400,500,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:200,300,400,500,600,700,900|Noto+Sans+SC:200,300,400,500,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext');
+// @import url('https://fonts.googleapis.com/css?family=Manuale:400,500,600,700&display=swap&subset=latin-ext');
+
+
+// Custom Font
+@font-face {
+  font-family: '源流明體';
+	src: url(../assets/fonts/GenRyuMinTW/GenRyuMinTW-ExtraLight.woff2) format('woff2');
+	font-weight: 200;
+	font-variant: common-ligatures proportional-nums slashed-zero;
+	font-display: swap;
+}
+@font-face {
+  font-family: '源流明體';
+  src: url(../assets/fonts/GenRyuMinTW/GenRyuMinTW-Light.woff2) format('woff2');
+	font-weight: 300;
+	font-variant: common-ligatures proportional-nums slashed-zero;
+	font-display: swap;
+}
+@font-face {
+  font-family: '源流明體';
+  src: url(../assets/fonts/GenRyuMinTW/GenRyuMinTW-Regular.woff2) format('woff2');
+	font-weight: 400;
+	font-variant: common-ligatures proportional-nums slashed-zero;
+	font-display: swap;
+}
+@font-face {
+  font-family: '源流明體';
+  src: url(../assets/fonts/GenRyuMinTW/GenRyuMinTW-Medium.woff2) format('woff2');
+	font-weight: 500;
+	font-variant: common-ligatures proportional-nums slashed-zero;
+	font-display: swap;
+}
+@font-face {
+  font-family: '源流明體';
+  src: url(../assets/fonts/GenRyuMinTW/GenRyuMinTW-SemiBold.woff2) format('woff2');
+	font-weight: 400;
+	font-variant: common-ligatures proportional-nums slashed-zero;
+	font-display: swap;
+}
+@font-face {
+  font-family: '源流明體';
+  src: url(../assets/fonts/GenRyuMinTW/GenRyuMinTW-Bold.woff2) format('woff2');
+	font-weight: 700;
+	font-variant: common-ligatures proportional-nums slashed-zero;
+	font-display: swap;
+}
+@font-face {
+  font-family: '源流明體';
+  src: url(../assets/fonts/GenRyuMinTW/GenRyuMinTW-Heavy.woff2) format('woff2');
+	font-weight: 900;
+	font-variant: common-ligatures proportional-nums slashed-zero;
+	font-display: swap;
+}
+
+
+// JetBrains Mono
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url(../assets/fonts/JetBrainsMono/woff2/JetBrainsMono-Regular.woff2) format('woff2'),
+       url(../assets/fonts/JetBrainsMono/woff/JetBrainsMono-Regular.woff) format('woff'),
+       url(../assets/fonts/JetBrainsMono/eot/JetBrainsMono-Regular.eot) format('eot');
+	font-weight: 400;
+	font-variant: common-ligatures proportional-nums slashed-zero;
+	font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url(../assets/fonts/JetBrainsMono/woff2/JetBrainsMono-Medium.woff2) format('woff2'),
+       url(../assets/fonts/JetBrainsMono/woff/JetBrainsMono-Medium.woff) format('woff'),
+       url(../assets/fonts/JetBrainsMono/eot/JetBrainsMono-Medium.eot) format('eot');
+	font-weight: 500;
+	font-variant: common-ligatures proportional-nums slashed-zero;
+	font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url(../assets/fonts/JetBrainsMono/woff2/JetBrainsMono-Bold.woff2) format('woff2'),
+       url(../assets/fonts/JetBrainsMono/woff/JetBrainsMono-Bold.woff) format('woff'),
+       url(../assets/fonts/JetBrainsMono/eot/JetBrainsMono-Bold.eot) format('eot');
+	font-weight: 700;
+	font-variant: common-ligatures proportional-nums slashed-zero;
+	font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url(../assets/fonts/JetBrainsMono/woff2/JetBrainsMono-ExtraBold.woff2) format('woff2'),
+       url(../assets/fonts/JetBrainsMono/woff/JetBrainsMono-ExtraBold.woff) format('woff'),
+       url(../assets/fonts/JetBrainsMono/eot/JetBrainsMono-ExtraBold.eot) format('eot');
+	font-weight: 900;
+	font-variant: common-ligatures proportional-nums slashed-zero;
+	font-display: swap;
+}
+
+
+
+$aeon-font-sans: 'Noto Sans CJK', 'Noto Sans TC', 'Source Han Sans TW', Microsoft Jhenhei, Heiti;
+$aeon-font-serif: "源流明體", "Noto Serif SC", "Source Han Serif SC", STFangsong, FangSong, FangSong_GB2312;
+$aeon-font-latin-sans: Fira Sans, Avenir Next, Avenir, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica Neue, Arial;
+$aeon-font-latin-serif: 'Merriweather', Georgia, 'Times New Roman';
+$aeon-font-mono: JetBrains Mono, Fira Code, Source Code Pro, PT Mono, Monaco, menlo, 'Courier New', Courier, monospace;
+$aeon-font-emoji: 'Apple Color Emoji', 'Segoe UI Emoji';
