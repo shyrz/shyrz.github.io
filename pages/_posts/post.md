@@ -1,14 +1,14 @@
 ---
-title: 测试文章 Test Post
+title: Aeon - 测试文章
 layout: post
 date: 2020-01-08
 categories:
-  - 测试分类
+  - Aeon
 tags:
-  - 测试标签
+  - Post
+toc: true
 ---
-
-[TOC]
+<!-- ${toc} -->
 
 # h1 Heading
 ## h2 Heading
@@ -264,15 +264,6 @@ Error{:.error}
 Tips{:.tips}
 
 Todo{:.todo}
-
-### LaTeX
-$$
-\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
-\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
-\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
-\end{vmatrix}
-$$
 
 ### \<KBD>
 
