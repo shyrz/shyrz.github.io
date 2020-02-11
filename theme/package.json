@@ -16,12 +16,14 @@
   "author": "Shyrz <i@sh7.me>",
   "license": "MIT",
   "dependencies": {
+    "modern-normalize": "^0.6.0",
+    "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
     "saber-highlight-css": "^0.1.1",
     "tinydate": "^1.2.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.12.0",
+    "autoprefixer": "^9.7.4",
     "node-sass": "^4.13.1",
     "saber": "^0.11.5",
     "saber-plugin-feed": "^0.4.3",
@@ -41,5 +43,9 @@
     "astral",
     "clean",
     "simple"
+  ],
+  "browserslist": [
+    ">0.5%",
+    "not op_mini all"
   ]
 }

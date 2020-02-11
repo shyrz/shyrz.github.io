@@ -1,9 +1,7 @@
-import './styles/modern-normalize.css';
-import 'saber-highlight-css/default.css';
-import './styles/aeon.scss';
+import './styles/aeon.scss'
+import 'saber-highlight-css/default.css'
 
-
-export default ({ router, setHead }) => {
+export default ({ router, Vue, setHead }) => {
   // Progress bar is not needed on server-side
   if (process.browser) {
     // These dependencies are only bundled in client build
@@ -27,8 +25,74 @@ export default ({ router, setHead }) => {
     })
   }
 
+
+
+
   setHead({
+    // htmlAttrs: {
+    //   lang: 'zh-Hans',
+    //   class: 'serif'
+    // },
+    meta: [
+      // favicons
+      {
+        name: 'msapplication-TileColor',
+        content: '#7A7A7A'
+      },
+      {
+        name: 'theme-color',
+        content: '#FFFFFF'
+      }
+    ],
     link: [
+      // favicons
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/apple-touch-icon.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicon-32x32.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favicon-16x16.png'
+      },
+      {
+        rel: 'manifest',
+        href: '/site.webmanifest'
+      },
+      {
+        rel: 'mask-icon',
+        href: '/safari-pinned-tab.svg',
+        color: '#7a7a7a'
+      },
+      // CDN preconnect
+      {
+        href: 'https://fonts.googleapis.com/',
+        rel: 'preconnect',
+        crossorigin: true
+      },
+      {
+        href: 'https://unpkg.com/',
+        rel: 'preconnect',
+        crossorigin: true
+      },
+      {
+        href: 'https://cdnjs.cloudflare.com/',
+        rel: 'preconnect',
+        crossorigin: true
+      },
+      {
+        rel: 'stylesheet',
+        media: 'all',
+        href: '//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css'
+      },
       {
         rel: 'stylesheet',
         href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css'
@@ -38,6 +102,13 @@ export default ({ router, setHead }) => {
       //   href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css'
       // }
     ],
-    // script: `mermaid.initialize({startOnLoad:true,theme:'neutral'});`
+    script: [
+      // FontAwesome
+      {
+        src: 'https://kit.fontawesome.com/ed63d7c78e.js',
+        crossorigin: 'anonymous'
+      },
+      
+    ]
   })
 }

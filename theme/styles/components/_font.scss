@@ -2,12 +2,15 @@
 // 字体配置
 // ---------------------------------------------------------------
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900|Noto+Serif+SC:200,300,400,500,600,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:200,300,400,500,600,700,900|Noto+Sans+SC:200,300,400,500,600,700,900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext');
+// @import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:200,300,400,500,600,700,900|Noto+Serif+SC:200,300,400,500,600,700,900&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:200,300,400,500,600,700,900|Noto+Sans+SC:200,300,400,500,600,700,900&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+// @import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext');
 // @import url('https://fonts.googleapis.com/css?family=Manuale:400,500,600,700&display=swap&subset=latin-ext');
 
+
+@import 'fonts/merriweather';
+// @import 'fonts/noto-serif';
 
 // Custom Font
 @font-face {
@@ -101,9 +104,9 @@
 
 
 
-$aeon-font-sans: 'Noto Sans CJK', 'Noto Sans TC', 'Source Han Sans TW', Microsoft Jhenhei, Heiti;
-$aeon-font-serif: "源流明體", "Noto Serif SC", "Source Han Serif SC", Songti;
-$aeon-font-latin-sans: Fira Sans, Avenir Next, Avenir, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica Neue, Arial;
+// $aeon-font-sans: 'Noto Sans CJK', 'Noto Sans TC', 'Source Han Sans TW', Microsoft Jhenhei, Heiti;
+$aeon-font-serif: "源流明體";
+// $aeon-font-latin-sans: Fira Sans, Avenir Next, Avenir, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica Neue, Arial;
 $aeon-font-latin-serif: 'Merriweather', Georgia, 'Times New Roman';
 $aeon-font-mono: JetBrains Mono, Fira Code, Source Code Pro, PT Mono, Monaco, menlo, 'Courier New', Courier, monospace;
 $aeon-font-emoji: 'Apple Color Emoji', 'Segoe UI Emoji';

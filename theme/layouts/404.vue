@@ -32,8 +32,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/variable.scss';
-@import '../styles/font.scss';
+@import '../styles/components/variable';
+@import '../styles/components/font';
 
 #_404 {
   display: flex;

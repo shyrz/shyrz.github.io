@@ -158,16 +158,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variable.scss";
-@import "../styles/font.scss";
+@import "../styles/components/variable";
+@import "../styles/components/font";
 
 #post {
   position: relative;
   width: 732px;
   padding: 21px 0 12px;
+  border-radius: 7px;
+  background: #FFF;
   z-index: 9999;
-  // transition: opacity 0.25s;
-  // background: #fafafa;
 }
 
 .post-header {
@@ -184,7 +184,6 @@ h1.post-title {
 
 h2.post-subtitle {
   margin: 0 21px 12px;
-  font-family: $aeon-font-latin-sans, $aeon-font-sans, sans-serif, $aeon-font-emoji;
   font-size: 24px;
   font-weight: 400;
   font-style: italic;
@@ -204,7 +203,6 @@ h2.post-subtitle {
   margin-bottom: 42px;
   padding: 30px 21px 21px;
   text-align: center;
-  font-family: $aeon-font-latin-sans, $aeon-font-sans, sans-serif;
   // background: $light-0;
   p {
     margin: 0 0 21px;
@@ -223,7 +221,6 @@ h2.post-subtitle {
 .publish {
   // grid-column-start: 1;
   // grid-column-end: 3;
-  font-family: $aeon-font-latin-sans, $aeon-font-sans, sans-serif;
   color: $gray;
   
 }
@@ -239,7 +236,6 @@ h2.post-subtitle {
   color: $gray;
   a {
     margin-right: 12px;
-    font-family: $aeon-font-latin-sans, $aeon-font-sans, sans-serif;
     font-weight: 300;
     color: $gray;
     &:hover,
@@ -261,8 +257,7 @@ h2.post-subtitle {
   border-top: 1px solid $light-1;
   a {
     padding: 21px 0;
-    font-family: $aeon-font-latin-sans, $aeon-font-sans, sans-serif,
-      $aeon-font-emoji;
+    // font-family: $aeon-font-latin-sans, $aeon-font-sans, sans-serif, $aeon-font-emoji;
     // font-weight: 00;
     text-decoration: none;
     &:hover,
@@ -291,7 +286,7 @@ h2.post-subtitle {
 
 @media (prefers-color-scheme: dark) {
   #post {
-    // background: $dark-0;
+    background: #0D0D0F;
   }
 
   h1.post-title {

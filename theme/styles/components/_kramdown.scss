@@ -1,0 +1,69 @@
+// ---------------------------------------------------------------
+// Kramdown
+// ---------------------------------------------------------------
+
+.info,
+.success,
+.warning,
+.error,
+.tips,
+.todo {
+  padding: 21px;
+  border: 1px solid $gray;
+  border-radius: 4px;
+}
+.info {
+  background: lighten($color: $blue, $amount: 40%);
+  border-color: $blue;
+}
+.success {
+  background: lighten($color: $green, $amount: 40%);
+  border-color: $green;
+}
+.warning {
+  background: lighten($color: $yellow, $amount: 40%);
+  border-color: $yellow;
+}
+.error {
+  background: lighten($color: $red, $amount: 40%);
+  border-color: $red;
+}
+.tips {
+  background: $light-1;
+  border-color: $gray;
+  &:before {
+    content: "⚠️";
+    margin-right: 16px;
+    color: $gray;
+  }
+}
+.todo {
+  background: lighten($color: $orange, $amount: 40%);
+  border-color: $orange;
+  &:before {
+    content: "☑️";
+    margin-right: 16px;
+    color: $orange;
+  }
+}
+
+.shadow {
+  box-shadow: 0 1px 2px rgba(46, 41, 51, 0.08), 0 2px 4px rgba(71, 63, 79, 0.08);
+}
+.round {
+  border-radius: 100%;
+}
+
+
+.left{
+  float: left;
+  margin-right: 1.7778rem;
+}
+.right {
+  float: right;
+  margin-left: 1.7778rem;
+}
+
+.align-right {
+  text-align: right;
+}

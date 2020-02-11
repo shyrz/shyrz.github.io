@@ -1,5 +1,6 @@
 <template>
 	<div id="edc">
+    
     <!-- 相机 -->
     <div id="camera">
       <div id="olympus-mzuiko-digital-ed-12-50mm-f35-63-ez">
@@ -44,13 +45,15 @@
 
     </div>
     <!-- 笔记本电脑 -->
-    <div id="macbook-pro-2018">
-      <div class="screen-wrap">
-        <div class="screen">
-          <slot name="default"></slot>
+    <div id="laptop">
+      <div id="macbook-pro-2018">
+        <div class="screen-wrap">
+          <div class="screen">
+            <slot name="default"></slot>
+          </div>
         </div>
+        <div class="keyboard"></div>
       </div>
-      <div class="keyboard"></div>
     </div>
     <!-- 耳机 -->
     <div id="headphone">
@@ -82,39 +85,60 @@
 
 
 <style lang="scss" scoped>
-@import '../styles/variable.scss';
-@import '../styles/font.scss';
+@import '../styles/components/variable';
+@import '../styles/components/font';
 
 #edc {
-  position: relative;
-  display: grid;
-  grid-template-columns: 17.5% 17.5% 30% 17.5% 17.5%;
+  position: fixed;
+  width: 100vw;
+  height: 200%;
+  z-index: 0;
+  // display: grid;
+  // grid-template-columns: 17.5% 17.5% 30% 17.5% 17.5%;
   // grid-template-rows: 50% 50%;
-  grid-gap: 20px 0;
-  justify-items: center;
-  align-items: end;
-  height: 40vh;
-  margin-bottom: 50px;
+  // grid-gap: 20px 0;
+  // justify-items: center;
+  // align-items: end;
+  // height: 40vh;
+  // margin-bottom: 50px;
 }
 
-#camera, #mobile, #headphone, #stationary {
+#camera, #mobile,#laptop, #headphone, #stationary {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  position: absolute;
 }
 
 #camera {
+  top: 70%;
+  left: -10vw;
+  transform: translateZ(-1px);
 }
 
 #mobile {
+  top: 30%;
+  left: 0;
+  transform: translateZ(-2px);
   
 }
 
+#laptop {
+  top: 60%;
+  right: -30vw;
+  transform: translateZ(-3px);
+}
+
 #headphone {
+  top: 0;
+  left: -20vw;
+  transform: translateZ(-2px);
 }
 
 #stationary {
-
+  top: 10%;
+  right: 0;
+  transform: translateZ(-1px);
 }
 
 #panasonic-lumix-dmc-g7 {
@@ -451,18 +475,14 @@
 }
 
 #macbook-pro-2018 {
+  transform: translateY(-5px);
   // position: absolute;
   // bottom: 0;
   // left: calc(50% - 275px);
-  transform: translateY(-5px);
-  img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0 auto;
-  }
   .screen-wrap {
     position: relative;
     width: 435px;
+    // width: 80%;
     height: 270px;
     margin: 0 auto;
     padding: 15px;
@@ -498,7 +518,7 @@
     width: 100%;
     height: 100%;
     // background: #4b4b4d;
-    background: #000;
+    background: $black;
     text-align: center;
   }
 
@@ -862,6 +882,19 @@
 
   #beats-solo-3-wireless .solo-beam:before {
     background: $black;
+  }
+}
+
+@media screen and (max-width: 732px) {
+	#edc {
+    display: block;
+  }
+  #camera, #mobile, #headphone, #stationary {
+    display: none;
+  }
+  #macbook-pro-2018 {
+    // transform: scale(0.75);
+    // display: none;
   }
 }
 </style>

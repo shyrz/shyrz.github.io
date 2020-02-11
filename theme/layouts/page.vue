@@ -53,8 +53,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/variable.scss';
-@import '../styles/font.scss';
+@import '../styles/components/variable';
+@import '../styles/components/font';
 
 #page {
   position: relative;
@@ -79,7 +79,6 @@ h1.page-title {
 
 h2.page-subtitle {
   margin: 0 21px 12px;
-  font-family: $aeon-font-latin-sans, $aeon-font-sans, sans-serif, $aeon-font-emoji;
   font-size: 24px;
   font-weight: 400;
   font-style: italic;

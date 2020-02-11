@@ -101,8 +101,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/variable.scss';
-@import '../styles/font.scss';
+@import '../styles/components/variable';
+@import '../styles/components/font';
 
 .toc {
   box-sizing: border-box;
@@ -112,11 +112,6 @@ export default {
   // top: 175px;
   // right: calc((100vw - 960px) / 2 + 192px);
   width: 228px;
-  // margin-left: 732px;
-  
-  font-family: $aeon-font-latin-sans, $aeon-font-sans, sans-serif;
-  // background: white;
-  // z-index: 1;
 }
 
 .toc-wrapper {
@@ -140,22 +135,9 @@ export default {
 	align-items: baseline;
 	position: relative;
 	height: 36px;
-	padding: 0 12px;
-	// border-left: 1px solid $highlight;
-	// border-right: 1px solid $highlight;
+	padding-left: 21px;
 	text-transform: uppercase;
 	line-height: 36px;
-	// color: $light-3;
-  // &:after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 26px;
-  //   right: -10px;
-  //   border-left: 18px solid #DADADA;
-  //   border-top: 7px solid #DADADA;
-  //   border-right: 18px solid transparent;
-  //   border-bottom: 7px solid transparent;
-  // }
 }
 
 .toc-trigger {
@@ -177,8 +159,8 @@ export default {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 0 12px;
-  font-size: 14px;
+	padding-left: 21px;
+	font-size: 14px;
 	
 	a.toc-heading {
 		width: 100%;

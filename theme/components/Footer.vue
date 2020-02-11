@@ -64,15 +64,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/variable.scss';
-@import '../styles/font.scss';
+@import '../styles/components/variable';
+@import '../styles/components/font';
 
 #footer {
   position: relative;
   padding: 50px 0;
-  background: inherit;
+  // background: inherit;
   text-align: center;
-  font-family: $aeon-font-sans, $aeon-font-latin-sans, sans-serif, $aeon-font-emoji;
   font-size: 14px;
   font-weight: 300;
   color: $gray;
@@ -126,5 +125,17 @@ export default {
 .social-item {
   padding: 0 2px;
   margin: 0 3px;
+  a {
+    color: $dark-4;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+@media screen and (max-width: 732px) {
+  #footer {
+    padding: 1em 1em 2em;
+  }
 }
 </style>
