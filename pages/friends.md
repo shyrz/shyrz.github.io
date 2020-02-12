@@ -1,5 +1,6 @@
 ---
 layout: page
+title: 友人
 ---
 
 - **Cee**：[Perfect Freeze!](https://blog.cee.moe)
